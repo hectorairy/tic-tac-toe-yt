@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe Game | ASRM Code</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 h-screen flex items-center justify-content"
+  >
+    <div
+      class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-md flex flex-col items-center"
+    >
+      <div class="grid grid-cols-3 gap-2">
+        <button
+          class="w-20 h-20 bg-white border rounded-xl hover:bg-purple-100 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-opacity-50"
+          onclick="markCell(this, 0,0 )"
+        ></button>
+        <button
+          class="w-20 h-20 bg-white border rounded-xl hover:bg-purple-100 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-opacity-50"
+          onclick="markCell(this, 0, 1 )"
+        ></button>
+        <button
+          class="w-20 h-20 bg-white border rounded-xl hover:bg-purple-100 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-opacity-50"
+          onclick="markCell(this, 0, 2 )"
+        ></button>
+
+        <button
+          class="w-20 h-20 bg-white border rounded-xl hover:bg-purple-100 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-opacity-50"
+          onclick="markCell(this, 1,0 )"
+        ></button>
+        <button
+          class="w-20 h-20 bg-white border rounded-xl hover:bg-purple-100 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-opacity-50"
+          onclick="markCell(this, 1, 1 )"
+        ></button>
+        <button
+          class="w-20 h-20 bg-white border rounded-xl hover:bg-purple-100 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-opacity-50"
+          onclick="markCell(this, 1, 2 )"
+        ></button>
+
+        <button
+          class="w-20 h-20 bg-white border rounded-xl hover:bg-purple-100 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-opacity-50"
+          onclick="markCell(this, 2, 0 )"
+        ></button>
+        <button
+          class="w-20 h-20 bg-white border rounded-xl hover:bg-purple-100 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-opacity-50"
+          onclick="markCell(this, 2, 1 )"
+        ></button>
+        <button
+          class="w-20 h-20 bg-white border rounded-xl hover:bg-purple-100 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-opacity-50"
+          onclick="markCell(this, 2, 2 )"
+        ></button>
+      </div>
+
+      <div class="flex justify-between w-full mt-4">
+        <div class="text-purple-700">X Wins: <span id="xWins">0</span></div>
+        <div class="text-red-700">O Wins: <span id="oWins">0</span></div>
+        <div class="text-gray-700">Ties: <span id="ties">0</span></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
